@@ -1,0 +1,34 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    margin: 0%;
+}
+
+a[href^="http"]::before {
+    content: "🔗 hyper";
+  }
+  
+  a[href^="mailto"]::before {
+    content: "📧 ";
+  }
+  
+  a[href^="tel"]::before {
+    content: "📞 ";
+  }
+  
+  li {
+    margin-bottom: .5rem;
+  }
+  html {
+    font-family: sans-serif;
+  }
+  canvas {
+    background: #fff;
+    border: 1px dashed;
+  }
+  a.paint {
+    display: inline-block;
+    background: #69c;
+    color: #fff;
+    padding: 5px 10px;
+  }

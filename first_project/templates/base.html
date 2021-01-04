@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head %} {% endblock %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <div class='container'>
+        {% block body %} {% endblock %}
+    </div>
+    
+    <script >
+        var canvas = document.querySelector('canvas'),
+            c = canvas.getContext('2d');
+        c.fillStyle = 'blue'; 
+        
+        function draw(x, y) {
+          if (isDrawing) {
+            c.beginPath();
+            c.arc(x, y, 10, 0, Math.PI*2);
+            c.closePath();
+            c.fill();
+          }
+        }
+        
+        canvas.addEventListener('mousemove', event =>
+          draw(event.offsetX, event.offsetY)
+        );
+        canvas.addEventListener('mousedown', () => isDrawing = true);
+        canvas.addEventListener('mouseup', () => isDrawing = false);
+        
+        document.querySelector('a.paint').addEventListener('click', event =>
+          event.target.href = canvas.toDataURL()
+        );
+            </script>
+</body>
+</html>

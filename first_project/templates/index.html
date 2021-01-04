@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title> schrodingr </title>
+{% endblock %}
+
+{% block body %}
+<h1> Hello world!! </h1>
+<h2>You can contact Raj jain at </h2>
+<ul>
+    <li>
+        <a href='tel: 7611936450'> Mobile</a>
+    </li>
+    <li>
+        <a href='mailto:suranaraj98@gmail.com'> Email</a>
+    </li>
+    <li>
+        <a href='http://127.0.0.1:5000/'> schrodingers </a>
+    </li>
+</ul>
+
+<p>Paint by holding down the mouse button and moving it.
+    <a class='paint' href="" download="my_painting.png">Download my painting</a>
+  </p>
+  
+  <canvas width=400px height=200px></canvas>
+
+{% endblock %}
