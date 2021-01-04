@@ -1,0 +1,3 @@
+conda env list --gives the list of available environments with information on current working
+                 environment.
+conda

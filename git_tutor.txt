@@ -1,0 +1,22 @@
+git resotre no.txt ---will undo the changes in workig directory if made any till this no.txt is
+in staging area.
+
+git resotre --staged no.txt will remove this file from staging area.
+
+git rm --cached filename to unstage file.
+
+git reset will remove everyfile from staging area and bring it to untracked file
+
+git .ignore file ignores stuff
+
+git config --list
+
+git config --global user.name "raj jain"
+
+git status show commit to be made , show current local branch, show whether this current local 
+brach is in line with remote origin.
+
+git checkout second_project will go to branch file.
+
+git merge second_project will merge this with local master 
+

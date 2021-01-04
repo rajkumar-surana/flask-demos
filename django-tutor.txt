@@ -1,0 +1,31 @@
+flask is lightweight WSGI web application framework , it started as a wrapper around jinja
+ and Werkzeug but now have become most popular web app framework.
+
+ flask is a micro web framework which has no data abstraction layer, form validation layer or 
+ any other components where pre-existing third party library provide commong function.
+
+ However, Flask supports extensions that can add application features 
+ as if they were implemented in Flask itself. Extensions exist for object-relational mappers,
+form validation, upload handling,
+various open authentication technologies and several common framework related tools.
+
+Flask was created by Armin Ronacher of Pocoo,
+an international group of Python enthusiasts formed in 2004
+
+Jinja, also by Ronacher, is a template engine for the Python programming language and 
+is licensed under a BSD License.
+ Similar to the Django web framework, it handles templates in a sandbox.
+
+Werkzeug  toolkit for Web Server Gateway Interface (WSGI) applications.
+
+flask support sandboxed environment : A sandbox is an isolated testing environment that 
+enables users to run programs or execute files without affecting the application, system or 
+platform on which they run.
+ Software developers use sandboxes to test new programming code. 
+
+same origin policy insures same protocol,origin, port script is able to acess that pop only not
+any other port or protocol or origin.
+
+xss - cross site scripting is a attack that downloads js on your web and cause that java script
+to talk to other web address or other pop variation.
+
